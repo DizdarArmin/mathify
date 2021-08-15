@@ -1,22 +1,33 @@
-
-export default function Operations(){
-    return (
-        <div className="container text-white">
-            <div className="d-flex center operations row">
-                <div className="col text-center bg-warning ">
-                    <h1>+</h1>
-                </div>
-                <div className="col text-center bg-success ">
-                    <h1>-</h1>
-                </div>
-                <div className="col text-center bg-primary">
-                    <h1>/</h1>
-                </div>
-                <div className="col text-center bg-info">
-                    <h1>*</h1>
-                </div>
-
-            </div>
+export default function Operations({ handler, operation }) {
+  return (
+    <div className="container text-white">
+      <div className="d-flex center operations row">
+        <div
+          className="col text-center addition "
+          onClick={() => handler("addition")}
+        >
+          <i className="fas fa-plus fa-2x"></i>
         </div>
-    )
+
+        <div
+          className="col text-center subtraction "
+          onClick={() => handler("subtraction")}
+        >
+          <i className="fas fa-minus fa-2x"></i>
+        </div>
+        <div
+          className="col text-center division"
+          onClick={() => handler("division")}
+        >
+          <i className="fas fa-divide fa-2x"></i>
+        </div>
+        <div
+          className="col text-center multiplication"
+          onClick={() => handler("multiplication")}
+        >
+          <i className="fas fa-times fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  );
 }

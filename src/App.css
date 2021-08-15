@@ -1,41 +1,93 @@
-*{
+* {
   margin: 0 auto !important;
   padding: 0 0 !important ;
 }
-.d-flex{
+.parent {
+  background-color: black;
+}
+.d-flex {
   align-items: center;
   justify-content: center;
   height: 100px;
 }
 
-.container-fluid{
+.container-fluid {
   width: 100% !important;
 }
-.equation{
+.equation {
   border: 2px solid white;
 }
-.operations div{
+.operations div {
   height: 100%;
   border: 2px solid white;
 }
-.center div{
+.center div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.operations{
+.operations {
   width: 100%;
 }
-.keyboard-row{
+
+.keyboard-row {
   height: 80px !important;
   font-size: 32px !important;
 }
-button:active, button:focus{
+button:active,
+button:focus {
   outline: none;
 }
-button{
-  background-color: tomato;
+button {
+  background-color: inherit !important;
   font-size: 48px !important;
   border: 2px solid white;
   color: white;
+}
+.container {
+  max-width: 550px;
+}
+.addition {
+  background-color: #ef5350 !important;
+}
+.subtraction {
+  background-color: #5c6bc0 !important;
+}
+.multiplication {
+  background-color: #66bb6a !important;
+}
+.division {
+  background-color: #ffee58 !important;
+}
+.logo h1 {
+  font-size: 60px !important;
+}
+
+.logo h1:nth-child(1) {
+  color: #ef5350 !important;
+}
+.logo h1:nth-child(2) {
+  color: #5c6bc0 !important;
+}
+.logo h1:nth-child(3) {
+  color: #ffee58 !important;
+}
+.logo h1:nth-child(4) {
+  color: #66bb6a !important;
+}
+.logo h1:nth-child(5) {
+  color: #ef5350 !important;
+}
+.logo h1:nth-child(6) {
+  color: #5c6bc0 !important;
+}
+.logo h1:nth-child(7) {
+  color: #ffee58 !important;
+}
+
+.answer {
+  border: 2px solid white;
+}
+.full {
+  height: 100vh !important;
 }
