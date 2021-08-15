@@ -1,7 +1,7 @@
 export default function Operations({ handler, operation }) {
   return (
-    <div className="container text-white">
-      <div className="d-flex center operations row">
+    <div className="container text-white  operations">
+      <div className="center row">
         <div
           className="col text-center addition "
           onClick={() => handler("addition")}
